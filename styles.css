@@ -1,9 +1,10 @@
 :root {
   color-scheme: light;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #f7ede2;
+  background: radial-gradient(circle at top left, #ffe8d2 0%, #f7ede2 35%, #fff8f0 100%);
   color: #4c2f22;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 * {
@@ -47,14 +48,16 @@ header {
   margin: 14px auto 0;
   max-width: 700px;
   color: #6d4731;
+  font-weight: 600;
 }
 
 .panel {
-  background: #fff6ef;
-  border-radius: 24px;
-  box-shadow: 0 24px 68px rgba(83, 52, 34, 0.12);
+  background: linear-gradient(180deg, #fff6ef 0%, #ffe9d9 48%, #f8e5d3 100%);
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(83, 52, 34, 0.16);
   padding: 28px;
   margin-bottom: 24px;
+  border: 1px solid rgba(181, 90, 31, 0.18);
 }
 
 .panel-header {
@@ -68,6 +71,8 @@ header {
 
 .panel-header h2 {
   margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .action-group {
@@ -78,11 +83,12 @@ header {
 
 button {
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 12px 18px;
   font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  font-weight: 700;
 }
 
 button:hover {
@@ -90,12 +96,13 @@ button:hover {
 }
 
 button.primary {
-  background: #bd5a1f;
+  background: linear-gradient(135deg, #b34a17 0%, #d17231 100%);
   color: white;
+  box-shadow: 0 10px 24px rgba(179, 74, 23, 0.22);
 }
 
 button.secondary {
-  background: #f8e1d0;
+  background: linear-gradient(135deg, #fbe3cf 0%, #f7d5b8 100%);
   color: #4c2f22;
 }
 
@@ -131,16 +138,17 @@ button.secondary {
 }
 
 .topic-list li {
-  background: #fff4eb;
-  border: 1px solid #ecc9b4;
-  border-radius: 18px;
-  padding: 16px;
+  background: linear-gradient(135deg, #fff4eb 0%, #ffe7ce 100%);
+  border: 1px solid #e8b996;
+  border-radius: 20px;
+  padding: 18px;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .topic-list li:hover {
-  background: #ffe7d7;
+  background: linear-gradient(135deg, #fff5e6 0%, #ffd6b5 100%);
+  transform: translateY(-1px);
 }
 
 .draft-info {
