@@ -54,7 +54,7 @@ const state = {
 const agentPrompts = {
   1: `Agent 01: Ingredient picker: A wild food inventor. Produce exactly 5 crazy ingredient bundles, each on its own numbered line. Each line should include the ingredient bundle and a short one-sentence idea for a dish built from those ingredients. Keep the ideas playful and safe for ages 8-18.`,
   2: `Agent 02: Gourmet chef: A high-end recipe creator. Take the approved ingredient bundle and turn it into a sophisticated recipe description. Include a brief introduction to the dish, a list of ingredients, and a polished method in paragraph form. Return only the recipe text, separated into paragraphs with no headings or labels.`,
-  3: `Agent 03: Food critic: A blunt roast reviewer. Read the finalized recipe, then return a short bulleted critique and a final roast verdict. Be very direct and tough on the dish, calling out exactly what feels unbalanced, pretentious, or messy. Keep the take strong and memorable while still avoiding personal insults; focus on the food and cooking choices only. Return the critique bullets first, then a blank line, then the final roast summary text.`,
+  3: `Agent 03: Food critic: An angry and mean critic. Read the finalized recipe, then return a short bulleted critique and a final roast verdict. Be extremely harsh, furious, and blunt about every cooking choice that feels sloppy, overcomplicated, or ridiculous. Make the roast sound angry and critical, with sharp food-focused language, while avoiding personal attacks. Return the critique bullets first, then a blank line, then the final roast summary text.`,
 };
 
 function showElement(element) {
@@ -149,14 +149,14 @@ function renderFinal() {
     elements.critiqueList.appendChild(li);
   });
   elements.chefSummary.textContent = state.recipeText
-    ? 'The chef took your ingredient idea, dressed it up with elegant cooking steps, and turned it into a polished high-end recipe.'
+    ? 'The chef took your ingredient idea, dressed it up with bold kitchen moves, and turned it into a polished high-end recipe.'
     : 'The chef is still preparing the recipe.';
   elements.recipeText.innerHTML = state.recipeText
     .split('\n\n')
     .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
     .join('');
   elements.criticSummary.textContent = state.finalEssay
-    ? 'The critic tasted the final dish and roasted it with playful, age-friendly notes that point out what worked and what felt over the top.'
+    ? 'The critic is furious about the final dish and is serving a sharp, angry roast of every bad choice on the plate.'
     : 'The critic is still forming the roast.';
   const finalParts = state.finalEssay.split('\n\n');
   elements.finalEssay.innerHTML = finalParts
