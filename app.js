@@ -54,7 +54,7 @@ const state = {
 const agentPrompts = {
   1: `Agent 01: Ingredient picker: A wild food inventor. Produce exactly 5 crazy ingredient bundles, each on its own numbered line. Each line should include the ingredient bundle and a short one-sentence idea for a dish built from those ingredients. Keep the ideas playful and safe for ages 8-18.`,
   2: `Agent 02: Gourmet chef: A high-end recipe creator. Take the approved ingredient bundle and turn it into a sophisticated recipe description. Include a brief introduction to the dish, a list of ingredients, and a polished method in paragraph form. Return only the recipe text, separated into paragraphs with no headings or labels.`,
-  3: `Agent 03: Food critic: A sharp but fun roast reviewer. Read the finalized recipe, then return a short bulleted critique and a final roast verdict. Never be mean; keep the tone playful, and make sure the notes are clear for a student to understand. Return the critique bullets first, then a blank line, then the final roast summary text.`,
+  3: `Agent 03: Food critic: A blunt roast reviewer. Read the finalized recipe, then return a short bulleted critique and a final roast verdict. Be very direct and tough on the dish, calling out exactly what feels unbalanced, pretentious, or messy. Keep the take strong and memorable while still avoiding personal insults; focus on the food and cooking choices only. Return the critique bullets first, then a blank line, then the final roast summary text.`,
 };
 
 function showElement(element) {

@@ -5,9 +5,9 @@
   background-image:
     radial-gradient(circle at 20% 20%, rgba(255, 197, 102, 0.35), transparent 15%),
     radial-gradient(circle at 80% 25%, rgba(255, 233, 166, 0.45), transparent 18%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cstyle%3Etext%7Bfont-size:24px;font-family:Segoe UI Emoji,sans-serif%7D%3C/style%3E%3Ctext x='12' y='34'%3E%F0%9F%8D%95%3C/text%3E%3Ctext x='62' y='34'%3E%F0%9F%8D%A4%3C/text%3E%3Ctext x='12' y='84'%3E%F0%9F%8D%90%3C/text%3E%3Ctext x='62' y='84'%3E%F0%9F%8D%B0%3C/text%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' viewBox='0 0 360 360'%3E%3Cstyle%3Etext%7Bfont-size:64px;font-family:Segoe UI Emoji,sans-serif%7D%3C/style%3E%3Ctext x='20' y='90'%3E%F0%9F%8D%95%3C/text%3E%3Ctext x='200' y='90'%3E%F0%9F%8D%9C%3C/text%3E%3Ctext x='20' y='230'%3E%F0%9F%8D%94%3C/text%3E%3Ctext x='200' y='230'%3E%F0%9F%8D%B3%3C/text%3E%3C/svg%3E");
   background-repeat: repeat;
-  background-size: auto, auto, 160px 160px;
+  background-size: auto, auto, 520px 520px;
   color: #4c2f22;
   line-height: 1.6;
   font-weight: 500;
