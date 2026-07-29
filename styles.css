@@ -51,6 +51,44 @@ header {
   font-weight: 600;
 }
 
+.emoji-scatter {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 16px auto 0;
+}
+
+.emoji-scatter span {
+  display: inline-block;
+  font-size: 1.5rem;
+  animation: floatEmoji 4s ease-in-out infinite;
+}
+
+.emoji-scatter span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.emoji-scatter span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.emoji-scatter span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.emoji-scatter span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes floatEmoji {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+}
+
 .panel {
   background: linear-gradient(180deg, #fff6ef 0%, #ffe9d9 48%, #f8e5d3 100%);
   border-radius: 28px;
@@ -138,12 +176,22 @@ button.secondary {
 }
 
 .topic-list li {
+  position: relative;
   background: linear-gradient(135deg, #fff4eb 0%, #ffe7ce 100%);
   border: 1px solid #e8b996;
   border-radius: 20px;
-  padding: 18px;
+  padding: 18px 18px 18px 44px;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.topic-list li::before {
+  content: '🍜';
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
 }
 
 .topic-list li:hover {
