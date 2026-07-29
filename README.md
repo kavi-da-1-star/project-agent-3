@@ -1,2 +1,2 @@
 # Project-CrazyCooking!
-an essay writer using 3 different agents.
+a chatbot that makes crazy recipes and turns them into culinary wonders for a angry critique to roast!
