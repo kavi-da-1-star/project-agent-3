@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrazyCooking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header>
+      <div class="logo">
+        <span class="badge">CrazyCooking</span>
+      </div>
+      <p class="subtitle">A wild kitchen studio where three agents pass a bizarre food idea from ingredients to gourmet recipe to critic roast.</p>
+    </header>
+
+    <section id="status" class="status hidden"></section>
+    <section id="error" class="error-card hidden"></section>
+
+    <section id="topics-screen" class="panel hidden">
+      <div class="panel-header">
+        <h2>Pick a Dish Idea</h2>
+        <button id="refresh-topics" class="primary">Five More Ideas</button>
+      </div>
+      <p>Agent 01 generates five crazy ingredient bundles for a playful high-end recipe.</p>
+      <ul id="topic-list" class="topic-list"></ul>
+    </section>
+
+    <section id="draft-screen" class="panel hidden">
+      <div class="panel-header">
+        <h2>Ingredient Draft</h2>
+        <div class="action-group">
+          <button id="edit-draft" class="secondary">Edit The Draft</button>
+          <button id="draft-again" class="secondary">Five More Ideas</button>
+          <button id="pick-another" class="secondary">Pick Another Idea</button>
+        </div>
+      </div>
+      <div class="draft-info">
+        <strong>Chosen idea:</strong> <span id="chosen-topic"></span>
+      </div>
+      <div id="draft-content" class="draft-content"></div>
+      <div id="draft-editor" class="draft-editor hidden">
+        <div class="editor-controls">
+          <button id="save-draft" class="primary">Save Draft</button>
+          <button id="cancel-edit" class="secondary">Cancel</button>
+        </div>
+        <div id="paragraph-editors" class="paragraph-editors"></div>
+      </div>
+      <div class="approve-row">
+        <button id="approve-send" class="primary">Approve and send to the chef</button>
+      </div>
+    </section>
+
+    <section id="final-screen" class="panel hidden">
+      <div class="panel-header">
+        <h2>Final Dish Review</h2>
+        <div class="action-group">
+          <button id="copy-final" class="primary">Copy the Roast</button>
+          <button id="start-new" class="secondary">Start A New Dish</button>
+        </div>
+      </div>
+      <div class="review-block">
+        <h3>Chef's transformation</h3>
+        <p id="chef-summary" class="process-summary"></p>
+      </div>
+      <div class="review-block">
+        <h3>Gourmet recipe</h3>
+        <div id="recipe-text" class="essay-block"></div>
+      </div>
+      <div class="review-block">
+        <h3>Critic roast</h3>
+        <p id="critic-summary" class="process-summary"></p>
+        <ul id="critique-list" class="critique-list"></ul>
+      </div>
+      <div class="review-block">
+        <div class="final-summary">
+          <h3>Roast verdict</h3>
+          <span id="word-count" class="word-count"></span>
+        </div>
+        <div class="compare-toggle">
+          <label><input type="checkbox" id="compare-toggle" /> Compare with your draft</label>
+        </div>
+        <div id="final-essay" class="essay-block"></div>
+      </div>
+      <div id="compare-pane" class="compare-pane hidden">
+        <div>
+          <h4>Your draft</h4>
+          <div id="compare-draft" class="compare-text"></div>
+        </div>
+        <div>
+          <h4>Final roast</h4>
+          <div id="compare-final" class="compare-text"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

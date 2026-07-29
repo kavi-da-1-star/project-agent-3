@@ -1,0 +1,12 @@
+{
+  "name": "project-agent-3",
+  "version": "0.1.0",
+  "description": "The 3 Agents essay studio",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
